@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+<div class="login__div">
+
+    <div class="login__section__one">
+      <img class="img__display" src="https://images.unsplash.com/photo-1617440168942-e4355a82b7fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" srcset="">
+     
+      </div>
+<div class="login__section__two">
+  <h1>Login</h1>
+  <% if (messages.error) { %>
+    <%= messages.error %>
+  <% } %>
+  <form action="/login" method="POST">
+    <div>
+    
+      <input type="email" id="email" name="email" placeholder="Enter your email" required >
+    </div>
+    <div>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+  <a href="/register">Register</a>
+  </div>
+
+
+</div>
